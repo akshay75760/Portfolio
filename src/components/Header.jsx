@@ -6,7 +6,7 @@ const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const menuItems = [
-    { name: 'Home', href: '#home' },
+    { name: 'Home', href: '#hero' },
     { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' }, 
     { name: 'Projects', href: '#projects' },

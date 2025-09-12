@@ -13,14 +13,6 @@ const ActionButtons = () => {
   return (
     <section className="py-8 px-6 bg-white dark:bg-gray-800 transition-colors duration-300">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Scroll Down Indicator */}
-        <div className="mb-8">
-          <div className="w-px h-16 bg-gray-300 dark:bg-gray-600 mx-auto mb-4 transition-colors duration-300"></div>
-          <div className="w-6 h-6 border-2 border-gray-400 dark:border-gray-500 rounded-full mx-auto animate-bounce transition-colors duration-300">
-            <div className="w-2 h-2 bg-gray-400 dark:bg-gray-500 rounded-full mx-auto mt-1 transition-colors duration-300"></div>
-          </div>
-        </div>
-
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           {/* View My Work Button */}

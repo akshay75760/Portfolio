@@ -22,19 +22,20 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     // Apply the theme on mount and when it changes
+    const htmlElement = document.documentElement;
+    
     if (isDarkMode) {
-      document.documentElement.classList.add('dark');
+      htmlElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
-      document.documentElement.classList.remove('dark');
+      htmlElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
+    
   }, [isDarkMode]);
 
   const toggleTheme = () => {
-    setIsDarkMode(prev => {
-      const newMode = !prev;
-      localStorage.setItem('theme', newMode ? 'dark' : 'light');
-      return newMode;
-    });
+    setIsDarkMode(prev => !prev);
   };
 
   const value = {

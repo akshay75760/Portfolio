@@ -4,9 +4,7 @@ import HeroSection from './components/HeroSection'
 import SkillsSection from './components/SkillsSection'
 import EducationSection from './components/EducationSection'
 import ProjectsSection from './components/ProjectsSectionNew'
-import ContactCards from './components/ContactCards'
 import ContactForm from './components/ContactForm'
-import ActionButtons from './components/ActionButtons'
 import Footer from './components/Footer'
 
 function App() {
@@ -19,9 +17,7 @@ function App() {
           <SkillsSection />
           <EducationSection />
           <ProjectsSection />
-          <ContactCards />
           <ContactForm />
-          <ActionButtons />
         </main>
         <Footer />
       </div>
