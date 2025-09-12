@@ -27,7 +27,6 @@ const ContactCards = () => {
                 <span className="text-gray-700 dark:text-gray-300 transition-colors duration-300">Bokaro, Jharkhand</span>
               </div>
               
-              {/* Phone */}
               <div className="flex items-center space-x-3">
                 <div className="w-8 h-8 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center flex-shrink-0 transition-colors duration-300">
                   <svg className="w-4 h-4 text-gray-600 dark:text-gray-400 transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
