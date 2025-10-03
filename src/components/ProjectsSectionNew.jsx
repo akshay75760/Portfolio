@@ -51,11 +51,11 @@ const ProjectsSection = () => {
       title: "Realtime Code Editor",
       description: "Built a real-time web application for writing and executing code with a side-by-side editor and output view.",
       features: [
-        "Live code execution with instant output rendering",
-        "Multi-language support with syntax highlighting",
-        "Collaborative editing with WebSocket-based real-time updates",
-        "User-friendly interface with split-screen editor and output"
-          ],
+      "Instant code execution ",
+      "Multi-language support ",
+      "Real-time collaboration ",
+      "Clean split-screen UI"
+    ],
       techStack: [
         "HTML",
         "CSS", 
