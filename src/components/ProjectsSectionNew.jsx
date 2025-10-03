@@ -48,19 +48,18 @@ const ProjectsSection = () => {
       color: "bg-slate-600"
     },
     {
-      title: "Realtime Project",
-      description: "A real-time application showcasing modern development practices and technologies. This project demonstrates proficiency in building responsive and interactive web applications.",
+      title: "Realtime Code Editor",
+      description: "Built a real-time web application for writing and executing code with a side-by-side editor and output view.",
       features: [
-        "Real-time Updates",
-        "Modern Architecture",
-        "Scalable Design",
-        "Interactive Interface"
-      ],
+        "Live code execution with instant output rendering",
+        "Multi-language support with syntax highlighting",
+        "Collaborative editing with WebSocket-based real-time updates",
+        "User-friendly interface with split-screen editor and output"
+          ],
       techStack: [
-        "React",
-        "Node.js", 
-        "WebSocket",
-        "Real-time Features"
+        "HTML",
+        "CSS", 
+        "JavaScript",
       ],
       github: "https://github.com/akshay75760/Realtime",
       live: "#", 

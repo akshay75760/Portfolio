@@ -2,8 +2,19 @@ import { useTheme } from '../context/ThemeContext';
 import { useState } from 'react';
 
 const Header = () => {
-  const { isDarkMode, toggleTheme } = useTheme();
+  const { isDark, toggleTheme } = useTheme();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  console.log('Header render - isDark:', isDark); // Debug log
+
+  const handleThemeToggle = () => {
+    console.log('Theme toggle clicked! Current isDark:', isDark);
+    toggleTheme();
+    setTimeout(() => {
+      console.log('After toggle, isDark should change in next render');
+      console.log('Document has dark class:', document.documentElement.classList.contains('dark'));
+    }, 100);
+  };
 
   const menuItems = [
     { name: 'Home', href: '#hero' },
@@ -23,6 +34,10 @@ const Header = () => {
           </div>
           <div className="text-xl font-bold bg-gradient-to-r from-gray-900 to-blue-800 dark:from-white dark:to-blue-200 bg-clip-text text-transparent">
             Akshay Kumar
+          </div>
+          {/* Theme Status Indicator */}
+          <div className="text-xs px-2 py-1 rounded bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200">
+            {isDark ? 'Dark' : 'Light'}
           </div>
         </div>
 
@@ -44,12 +59,12 @@ const Header = () => {
         <div className="flex items-center space-x-4">
           {/* Enhanced Dark Mode Toggle */}
           <button
-            onClick={toggleTheme}
+            onClick={handleThemeToggle}
             className="relative p-3 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300 text-gray-600 dark:text-gray-300 shadow-md hover:shadow-lg transform hover:scale-110"
             aria-label="Toggle dark mode"
           >
             <div className="relative w-5 h-5">
-              {isDarkMode ? (
+              {isDark ? (
                 <svg className="w-5 h-5 transition-transform duration-300 rotate-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
                 </svg>
