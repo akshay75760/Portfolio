@@ -77,7 +77,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 dark:text-white transition-colors duration-300">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">kakshay70007@gmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300 transition-colors duration-300">kakshay75760@gmail.com</p>
                 </div>
               </div>
 
@@ -123,7 +123,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300"
-                    placeholder="John Doe"
+                    placeholder="Your Name"
                   />
                 </div>
                 <div>
@@ -138,7 +138,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent bg-white dark:bg-gray-700 text-gray-900 dark:text-white transition-colors duration-300"
-                    placeholder="john@example.com"
+                    placeholder="name@mail.com"
                   />
                 </div>
               </div>
